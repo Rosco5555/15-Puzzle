@@ -165,7 +165,7 @@ solved = True
 gameSelected = False
 # Writing an initial time of 100000
 d = shelve.open('times.txt')
-if not d['time']:
+if not 'time' in d:
     d['time'] = 10000
 
 d.close()
